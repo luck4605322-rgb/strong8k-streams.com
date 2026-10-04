@@ -1,0 +1,78 @@
+# Strong8K Cloudflare Pages routing
+# Canonical URLs are extensionless. Explicitly retire .html and legacy directory URLs.
+/index.html / 301
+/es.html /es 301
+/fr.html /fr 301
+/de.html /de 301
+/pt.html /pt 301
+/it.html /it 301
+/nl.html /nl 301
+/pl.html /pl 301
+/sv.html /sv 301
+/no.html /no 301
+/da.html /da 301
+/fi.html /fi 301
+/cs.html /cs 301
+/sk.html /sk 301
+/hu.html /hu 301
+/ro.html /ro 301
+/bg.html /bg 301
+/el.html /el 301
+/hr.html /hr 301
+/sl.html /sl 301
+/et.html /et 301
+/lv.html /lv 301
+/lt.html /lt 301
+/uk.html /uk 301
+
+# Pretty language URLs rewrite to the underlying static HTML files.
+/es /es.html 200
+/fr /fr.html 200
+/de /de.html 200
+/pt /pt.html 200
+/it /it.html 200
+/nl /nl.html 200
+/pl /pl.html 200
+/sv /sv.html 200
+/no /no.html 200
+/da /da.html 200
+/fi /fi.html 200
+/cs /cs.html 200
+/sk /sk.html 200
+/hu /hu.html 200
+/ro /ro.html 200
+/bg /bg.html 200
+/el /el.html 200
+/hr /hr.html 200
+/sl /sl.html 200
+/et /et.html 200
+/lv /lv.html 200
+/lt /lt.html 200
+/uk /uk.html 200
+
+# Legacy directory-style language URLs from earlier deployments.
+/es/ /es 301
+/fr/ /fr 301
+/de/ /de 301
+/pt/ /pt 301
+/it/ /it 301
+/nl/ /nl 301
+/pl/ /pl 301
+/sv/ /sv 301
+/no/ /no 301
+/da/ /da 301
+/fi/ /fi 301
+/cs/ /cs 301
+/sk/ /sk 301
+/hu/ /hu 301
+/ro/ /ro 301
+/bg/ /bg 301
+/el/ /el 301
+/hr/ /hr 301
+/sl/ /sl 301
+/et/ /et 301
+/lv/ /lv 301
+/lt/ /lt 301
+/uk/ /uk 301
+
+# Do not add a SPA catch-all here; missing URLs should return 404.html with a real 404 status.
